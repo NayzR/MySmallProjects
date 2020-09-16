@@ -26,3 +26,54 @@ body {
 #returnbtn {
   text-align: right;
 }
+
+#colorbtns {
+  position: fixed;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+/* red buttons */
+#redplusbtn {
+  color: white;
+  border: none;
+  background-color: red;
+  font-size: 20px;
+}
+#redminusbtn {
+  color: white;
+  border: none;
+  background-color: red;
+  font-size: 20px;
+}
+
+/* green buttons */
+#greenplusbtn {
+  color: white;
+  border: none;
+  background-color: green;
+  font-size: 20px;
+}
+#greenminusbtn {
+  color: white;
+  border: none;
+  background-color: green;
+  font-size: 20px;
+}
+
+/* blue buttons */
+#blueplusbtn {
+  color: white;
+  border: none;
+  background-color: blue;
+  font-size: 20px;
+}
+#blueminusbtn {
+  color: white;
+  border: none;
+  background-color: blue;
+  font-size: 20px;
+}
