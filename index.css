@@ -1,0 +1,24 @@
+body {
+  background-color: rgb(165, 64, 64);
+}
+
+h1 {
+  color: rgb(211, 128, 20);
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+}
+
+#a1 {
+  color: rgb(211, 128, 20);
+  position: fixed;
+  left: 50%;
+  top: 33%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
+
+#a1:hover {
+  color: red;
+}
