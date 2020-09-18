@@ -10,15 +10,23 @@ h1 {
   transform: translate(-50%, -50%);
 }
 
-#a1 {
+a {
   color: rgb(211, 128, 20);
   position: fixed;
   left: 50%;
-  top: 33%;
   transform: translate(-50%, -50%);
   text-decoration: none;
 }
 
-#a1:hover {
+a:hover {
   color: red;
+}
+
+#a1 {
+  top: 33%;
+
+}
+
+#a2 {
+  top: 38%;
 }
