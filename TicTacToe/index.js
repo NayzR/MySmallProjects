@@ -13,6 +13,7 @@ const c3 = document.querySelector("#c3");
 let currentTurn = "X";
 let board = [["", "", ""], ["", "", ""], ["", "", ""]];
 let b = false;
+let roundCounter = 0;
 
 
 
@@ -22,7 +23,8 @@ a1.addEventListener("click", function() {
   board[0][0] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X";
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 a2.addEventListener("click", function() {
@@ -31,7 +33,8 @@ a2.addEventListener("click", function() {
   board[0][1] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 a3.addEventListener("click", function() {
@@ -40,7 +43,8 @@ a3.addEventListener("click", function() {
   board[0][2] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X";
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 b1.addEventListener("click", function() {
@@ -49,7 +53,8 @@ b1.addEventListener("click", function() {
   board[1][0] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 b2.addEventListener("click", function() {
@@ -58,7 +63,8 @@ b2.addEventListener("click", function() {
   board[1][1] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 b3.addEventListener("click", function() {
@@ -67,7 +73,8 @@ b3.addEventListener("click", function() {
   board[1][2] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 c1.addEventListener("click", function() {
@@ -76,7 +83,8 @@ c1.addEventListener("click", function() {
   board[2][0] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 c2.addEventListener("click", function() {
@@ -85,7 +93,8 @@ c2.addEventListener("click", function() {
   board[2][1] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 c3.addEventListener("click", function() {
@@ -94,11 +103,12 @@ c3.addEventListener("click", function() {
   board[2][2] = currentTurn;
   if(currentTurn === "X") currentTurn = "O";
   else currentTurn = "X"; 
-  testForWin();
+  testForEnd();
+  ++roundCounter;
 });
 
 
-function testForWin() {
+function testForEnd() {
   if(board[0][0] != "" && (board[0][0] === board[0][1] && board[0][1] === board[0][2])) {
     alert("Player " + board[0][0] + " wins!");
     b = true;
@@ -132,6 +142,10 @@ function testForWin() {
   }
   else if(board[0][2] != "" && (board[0][2] === board[1][1] && board[1][1] === board[2][0])) {
     alert("Player " + board[0][2] + " wins!");
+    b = true;
+  }
+  else if(roundCounter === 8) {
+    alert("Draw!")
     b = true;
   }
 
