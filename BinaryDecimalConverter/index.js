@@ -9,24 +9,31 @@ const result2 = document.querySelector("#result2")
 
 btn1.addEventListener("click", function() {
   let binNum = inp1.value;
+  if(binNum === "") {
+    result1.textContent = "Empty Input! Try again.";
+    return;
+  }
   if(isNotValidBinary(binNum)) {
     result1.textContent = "Wrong Input! Try again."
     return;
   }
   let intNum = parseInt(binNum, 2);
-  result1.textContent = intNum;
+  result1.textContent = "Result: " + intNum;
 });
 
 btn2.addEventListener("click", function() {
   let intNum = inp2.value;
+  if(intNum === "") {
+    result2.textContent = "Empty Input! Try again.";
+    return;
+  }
   intNum = parseInt(intNum);
-  console.log(intNum);
   if(isNaN(intNum)) {
     result2.textContent = "Wrong Input! Try again."
     return;
   }
   let binNum = intNum.toString(2);
-  result2.textContent = binNum;
+  result2.textContent = "Result: " + binNum;
 });
 
 function isNotValidBinary(num) {
