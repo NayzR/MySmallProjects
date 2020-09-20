@@ -34,3 +34,12 @@ a:hover {
   transform: translate(-50%, -50%);
   text-decoration: none;
 }
+
+#a3 {
+  color: rgb(211, 128, 20);
+  position: fixed;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  text-decoration: none;
+}
