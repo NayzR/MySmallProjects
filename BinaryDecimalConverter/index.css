@@ -2,3 +2,41 @@
 #returnbtn {
   text-align: right;
 }
+
+h1 {
+  position: fixed;
+  left: 50%;
+  top: 20%;
+  transform: translate(-50%, -50%);
+  color: #1d4852;
+}
+
+#f1 {
+  position: fixed;
+  left: 45%;
+  top: 35%;
+  transform: translate(-50%, -10%);
+  border: 1px solid black;
+  float: left;
+}
+
+#f2 {
+  position: fixed;
+  left: 45%;
+  top: 50%;
+  transform: translate(-50%, -10%);
+  border: 1px solid black;
+
+}
+
+p {
+  text-align: center;
+  color: #0a2f5f;
+  font-weight: bold;
+}
+
+body {
+  background-color: #369E96;
+  color: #1d4852;
+  font-size: 18px;
+}
